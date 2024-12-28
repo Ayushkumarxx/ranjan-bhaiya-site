@@ -259,7 +259,7 @@
       flex: 1;
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 5px;
   }
   .fewDetails .child h2{
       font-size: 32px;
@@ -268,7 +268,7 @@
   
   }
   .fewDetails .child .text{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     font-family: var(--font7);
   }
