@@ -187,17 +187,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 400px;
+    height: 350px;
     width: 100%;
   }
   .service .our-service .image-box {
     display: flex;
     justify-content: space-between;
-    flex: 3;
-    height: 100%;
+    flex: none;
+    width: 50%;
+    height: 350px;
   }
   .service .our-service .image-box .image {
-    width: 95%;
+    width: 100%;
     
     border-radius: 150px;
   }
@@ -206,11 +207,12 @@
   }
   
   .service .our-service .text {
-    flex: 1;
+    flex: none;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
+    width: 50%;
   }
 
   .service .our-service .text .li {
@@ -246,8 +248,9 @@
   }
   .service .reverse-service .rev-text {
     align-items: flex-start;
-    padding: 0 0px 0;
-    flex: 1;
+    padding: 0 10px 0;
+    flex: none;
+    width: 50%;
   }
   .service .reverse-service .rev-text p {
     font-size: 14px;
@@ -259,7 +262,7 @@
     background-color: transparent;
     border: none;
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     display: flex;
     align-items: center;
