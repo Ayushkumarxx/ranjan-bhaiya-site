@@ -16,10 +16,9 @@
   --font7:'Ubuntu', sans-serif;
   --bg-color: #F9F8F7;
 }
-html{
-  overflow-x: hidden;
-}
+
 body{
   background-color: var(--bg-color);
+  overflow-x: hidden;
 
 }

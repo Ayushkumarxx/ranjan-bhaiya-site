@@ -218,9 +218,9 @@
   
   .hero .heroImage .child::after {
     position: absolute;
-    rotate: -70deg;
-    top: 10%;
-    left: 10%;
+    rotate: -40deg;
+    top: -2%;
+    left: -2%;
     font-size: 24px;
     font-family: var(--font1);
     font-weight: 600;
@@ -275,7 +275,7 @@
     font-weight: 500;
   }
   .hero .heroImage .child .text h2 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
   }
   
