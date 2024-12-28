@@ -50,8 +50,8 @@ const OurWork = () => {
         setIconTextIndex([5, 3, 5, 3, 4, 2, 5, 6]);
       } else {
         // Screen width is smaller than or equal to 700px
-        setGridItem([1, 3, 2, 4, 3, 1, 4, 2, 4, 1, 3, 4, 1, 2, 2, 4]);
-        setIconTextIndex([2, 3, 2, 1, 2, 1, 4, 1]);
+        setGridItem([1, 3, 2, 3, 3, 1, 3, 2, 3, 1, 3, 3, 1, 2, 2, 3]);
+        setIconTextIndex([2, 3, 2, 1, 2, 1, 3, 1]);
       }
     };
 
