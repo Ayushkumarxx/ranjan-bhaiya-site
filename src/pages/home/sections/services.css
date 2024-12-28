@@ -220,6 +220,7 @@
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
+
   }
   .service .our-service .text .li .arrow {
     font-size: 22px;
@@ -227,7 +228,7 @@
   }
 
   .service .our-service .text .li p {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     font-family: var(--font4);
     color: #727578;
@@ -240,7 +241,7 @@
 
   .service .our-service .text .li:nth-child(3) p {
     color: #000;
-    font-size: 18px;
+    font-size: 16px;
   }
   .service .reverse-service {
     flex-direction: row-reverse;
