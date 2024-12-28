@@ -190,7 +190,12 @@
   .hero .heroText .text{
     text-align: center;
   }
-  
+  .hero .heroText .button button {
+    
+    font-size: 14px;
+    padding: 8px;
+    
+  }
   
   .hero .heroImage {
     width: 100%;
@@ -201,7 +206,7 @@
 
   
   .hero .heroImage .child .image {
-    height: 250px;
+    height: 280px;
     width: 95%;
  
   }
