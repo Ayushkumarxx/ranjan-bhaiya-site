@@ -71,7 +71,7 @@ const Home = () => {
               <div className="arc"></div>
               <div className="text">
                 <p>ranchi</p>
-                {isWideScreen ? <h2>Service in Ranchi</h2>: <h2>Services</h2>}
+                {isWideScreen ? <h2>Service in Ranchi</h2>: <h2>Services !</h2>}
               
               </div>
             </div>
