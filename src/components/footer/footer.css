@@ -133,3 +133,137 @@ footer .box-2{
     font-family: var(--font3);
     color: #727578;
 }
+
+@media  screen and (max-width: 768px) {
+    .footer{
+     
+     
+        padding: 100px 0px 40px;
+      
+   
+    }
+    .footer .abs-line-1{
+        position: absolute;
+        bottom: 15%;
+        right: -38%;
+        width: 250px;
+        rotate: 10deg;
+    }
+    .footer .abs-star{
+        position: absolute;
+        top: 10%;
+        left:40px;
+    
+        font-size: 36px;
+    }
+    .footer .cursive-head{
+        font-family: var(--font6);
+        font-size: 32px;
+   
+        
+    }
+    .footer .head{
+        font-family: var(--font2);
+        font-size: 42px;
+
+    
+    }
+    .footer .head .diff{
+        color: #45D676;
+    }
+    .footer .text{
+        font-family: var(--font3);
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 50px;
+        position: relative;
+        text-align: center;
+        
+    }
+    .footer .text img{
+        width: 60px;
+        position: absolute;
+        top: 150%;
+        right: 10%;
+        transform: scaleX(-1);
+        rotate: 240deg;
+    }
+    .footer button {
+        background-color: transparent;
+        border-width: 2px;
+        border-radius: 100px;
+        padding: 10px 20px;
+        font-family: var(--font3);
+        font-size: 18px;                                                                              
+        font-weight: 600;
+        transition: all 0.3s ease;
+        margin-bottom: 20px;                                                               
+    }
+    .footer button .arrow{
+        margin: 0 5px;
+    }
+    .footer button:hover{
+        background-color: #45D676;
+        color: #fff;
+    }
+    .footer .smallText{
+        font-family: var(--font3);
+        font-size: 14px;
+        font-weight: 600;
+        color: #727578;
+    }
+    .footer .socials{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+    .footer .socials .icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .socials .icon .i{
+        font-size: 18px;
+        color: #727578;
+        margin-right: 5px;
+    }
+    .footer .socials .icon .linkName{
+        font-family: var(--font3);
+        font-size: 16px;
+        font-weight: 600;
+        color: #727578;
+    }
+    
+    footer {
+        width: 95%;
+       
+        height: 85px;
+        
+       
+        padding: 0px 25px;
+    
+        margin-top: 150px;
+    }
+    footer .box-1{
+        display: flex;
+        gap:5px;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .box-1 .camera{
+        font-size: 24px;
+       
+    }
+    footer .box-1 p{
+        font-family: var(--font3);
+        font-size: 16px;
+        font-weight: 600;
+    }
+    footer .box-2{
+        font-size: 14px;
+        font-weight: 600;
+        font-family: var(--font3);
+        color: #727578;
+    }
+}
