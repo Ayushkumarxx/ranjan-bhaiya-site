@@ -1,0 +1,183 @@
+.showcase-container {
+  width: 100%;
+
+  margin-top: 10vh;
+  padding: 50px 0px;
+
+  background: #f6f6f6;
+}
+
+.showcase {
+    max-width: 1400px;
+  margin: auto;
+  display: flex;
+
+  
+}
+.showcase .child {
+  flex: 1;
+  display: flex;
+ 
+  align-items: center;
+  flex-direction: column;
+}
+
+.type-1-showcase,
+.type-2-showcase,
+.type-3-showcase {
+  width: 75%;
+  background-color: #fff;
+  padding: 20px;
+}
+.showcase .child  .sparkle{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 100px;
+}
+.showcase .child  .sparkle .spark{
+  font-size: 50px;
+}
+.type-1-showcase{
+    padding: 30px 20px;
+}
+.type-1-showcase .spark{
+    margin-right: 10px;
+}
+.type-1-showcase .text{
+    font-family: var(--font1);
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 22px;
+}
+.type-1-showcase h2{
+    text-align: center;
+    font-family: var(--font2);
+    font-size: 28px;
+    margin: 10px 0px;
+}
+
+.type-1-showcase .image-box-1{
+   width: 100%;
+   height: 220px;
+}
+
+.type-1-showcase .image-box-1 .image{
+    width: 70%;
+    height: 100%;
+}
+
+.type-1-showcase .image-box-1 .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.type-1-showcase .image-box-2{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+ }
+ 
+ .type-1-showcase .image-box-2 .image{
+     width: 75%;
+     height: 100%;
+ }
+ 
+ .type-1-showcase .image-box-2 .image img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     object-position: center;
+ }
+ .showcase .child .arrow{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .showcase .child  .arrow .arrow-down{
+    font-size: 50px;
+ }
+
+ .type-2-showcase{
+    padding: 30px 20px;
+ }
+ .type-2-showcase .text{
+    font-family: var(--font6);
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 10px;
+ }
+ .type-2-showcase .image{
+    width: 100%;
+    height: 350px;
+ }
+ .type-2-showcase .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+ }
+
+ .type-2-showcase .head-1{
+    text-align: left;
+    font-family: var(--font6);
+    font-size: 28px;
+    margin: 10px 0px;
+    font-weight: 500;
+ }
+ .type-2-showcase .head-2{
+    text-align: right;
+    font-family: var(--font7);
+    font-size: 28px;
+    margin: 10px 0px;
+    font-weight: 500;
+ }
+ .type-2-showcase .head-3{
+    text-align: left;
+    font-family: var(--font2);
+    font-size: 28px;
+    margin: 10px 0px;
+ }
+
+ .showcase .last{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+ }
+
+ .type-3-showcase{
+    padding: 30px 20px;
+ }
+
+ .type-3-showcase .sparkNtext{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+ }
+ .type-3-showcase .sparkNtext .spark{
+    font-size: 40px;
+ }
+ .type-3-showcase .sparkNtext .text{
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 22px;
+ }
+ .type-3-showcase .image{
+    width: 100%;
+    height: 350px;
+ }
+ .type-3-showcase .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+ }
