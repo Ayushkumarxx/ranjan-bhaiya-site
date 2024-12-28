@@ -252,16 +252,16 @@ footer .box-2{
         align-items: center;
     }
     footer .box-1 .camera{
-        font-size: 24px;
+        font-size: 18px;
        
     }
     footer .box-1 p{
         font-family: var(--font3);
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 600;
     }
     footer .box-2{
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 600;
         font-family: var(--font3);
         color: #727578;
