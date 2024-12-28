@@ -173,7 +173,7 @@
 @media screen and (max-width: 768px){
   .hero {
     padding: 0 10px;
-    margin-top: 6vh;
+    margin-top: 5vh;
     flex-direction: column;
   }
   .hero .heroText {
@@ -196,7 +196,7 @@
   
   .hero .heroImage {
     width: 100%;
-  margin-top: 20px;
+  margin-top: 25px;
     display: flex;
   }
   
@@ -250,7 +250,7 @@
   .hero .heroImage .child .arcNtext {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     align-items: center;
     gap: 10px;
   }
