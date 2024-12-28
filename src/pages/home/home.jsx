@@ -1,15 +1,26 @@
-import React from "react";
+import React , {useState, useEffect }from "react";
 import { About, Footer, Navbar, OurWork, Peoples, Service, Showcase, Testimonials } from "../../utils/export";
 import "./home.css";
 import { hero1, hero2, hero3 } from "../../assets";
 const Home = () => {
+   const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 700);
+    useEffect(() => {
+      const handleResize = () => {
+        setIsWideScreen(window.innerWidth > 700);
+      };
+      window.addEventListener("resize", handleResize);
+  
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }, []);
   return (
     <>
       <Navbar />
       <section className="hero">
         <div className="heroText">
           <div className="text">
-            {window.innerWidth > 700 ?   <h1>
+            {isWideScreen > 700 ?   <h1>
               <span>SAVE</span>
               <span >THE</span>
               <span>DATES</span>

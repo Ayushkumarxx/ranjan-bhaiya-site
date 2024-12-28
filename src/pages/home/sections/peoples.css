@@ -74,16 +74,16 @@
     }
     .peoples .main .text{
        width: 100%;
-       display: flex;
-       justify-content: center;
-       align-items: center;
+       display: block;
+        text-align: center;
        overflow-x: hidden;
     }
     .peoples .main .image{
         display: inline-block;
         width: 80px;
-        height: 35px;
+        height: 45px;
         border-radius: 80px;
+        vertical-align: middle;
         overflow: hidden;
         position: relative;
         margin: 0 10px;
