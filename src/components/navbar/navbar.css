@@ -48,6 +48,7 @@ nav .ham-icon {
 @media screen and (max-width: 768px) {
   nav {
     align-items: center;
+    padding: 10px;
   }
   nav .headNlinks .links {
     display: none;
