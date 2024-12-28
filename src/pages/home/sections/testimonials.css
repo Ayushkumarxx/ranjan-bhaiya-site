@@ -257,8 +257,7 @@
     line-height: 24px;
   }
   .testimonials .review-box .reviews .review p {
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 12px;
     font-family: var(--font5);
     color: rgb(44, 43, 43);
     line-height: 1.5;
