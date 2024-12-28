@@ -1,146 +1,250 @@
-.testimonials{
-    max-width: 1350px;
-    margin: 15vh auto;
+.testimonials {
+  max-width: 1350px;
+  margin: 15vh auto;
+}
+.testimonials .head {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
 
-     
+.testimonials .head .rotated {
+  display: inline-block;
+  transform: rotate(-2deg);
+  background-color: #fbeee0;
+  padding: 5px 20px;
+  font-family: var(--font6);
+}
+.testimonials .head .heading {
+  font-size: 62px;
+  font-weight: 600;
+  font-family: var(--font4);
+  position: relative;
+}
+.testimonials .head .heading .star {
+  position: absolute;
+  top: 50%;
+  right: -20%;
+  font-size: 42px;
+}
+.testimonials .head .text {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--font4);
+  margin-top: 5px;
+}
+.testimonials .details {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+
+  margin: auto;
+}
+
+.testimonials .details .heading {
+  font-size: 26px;
+  font-weight: 600;
+  font-family: var(--font3);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.testimonials .details .text {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--font4);
+  margin-top: 5px;
+}
+
+.testimonials .details .button {
+  width: 50%;
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 3px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+}
+
+.testimonials .details .button:hover {
+  background-color: #fff;
+}
+
+.testimonials .details .button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+
+.testimonials .review-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin: 100px 0 120px;
+}
+
+.testimonials .review-box .reviews {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+}
+.testimonials .review-box .reviews .review {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+.testimonials .review-box .reviews .gap {
+  flex: 0.8;
+}
+.testimonials .review-box .reviews .review h2 {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: var(--font5);
+  line-height: 24px;
+}
+.testimonials .review-box .reviews .review p {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--font5);
+  color: rgb(44, 43, 43);
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonials {
+
+    padding: 0 10px;
+  }
+  .testimonials .head {
    
-}
-.testimonials .head{
-    width: 100%; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
     gap: 20px;
+  }
 
-}
-
-.testimonials .head .rotated{
+  .testimonials .head .rotated {
     display: inline-block;
     transform: rotate(-2deg);
     background-color: #fbeee0;
     padding: 5px 20px;
     font-family: var(--font6);
+  }
+  .testimonials .head .heading {
+    font-size: 36px;
    
-}
-.testimonials .head .heading{
-    font-size: 62px;
-    font-weight: 600;
-    font-family: var(--font4);
-    position: relative;
-}
-.testimonials .head .heading .star{
+  }
+  .testimonials .head .heading .star {
     position: absolute;
-    top: 50%;
-    right: -20%;
-    font-size: 42px;
-}
-.testimonials .head .text{
-    font-size: 16px;
-    font-weight: 600;
-    font-family: var(--font4);
+    top: 70%;
+    right: 0%;
+    font-size: 36px;
+  }
+  .testimonials .head .text {
+    font-size: 14px;
+   
     margin-top: 5px;
-}
- .testimonials .details{
-    width: 60%;
+    width: 80%;
+  }
+  .testimonials .details {
+    width: 100%;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 
     margin: auto;
+  }
 
-}
-
-.testimonials .details .heading{
-    font-size: 26px;
+  .testimonials .details .heading {
+    font-size: 24px;
     font-weight: 600;
     font-family: var(--font3);
     display: flex;
     align-items: center;
     gap: 5px;
-}
+  }
 
-.testimonials .details .text{
-    font-size: 16px;
+  .testimonials .details .text {
+    font-size: 14px;
     font-weight: 600;
     font-family: var(--font4);
     margin-top: 5px;
-}
+  }
 
-.testimonials .details .button {
-    width: 50%;
-    background-color: #fbeee0;
-    border: 2px solid #422800;
-    border-radius: 3px;
-    box-shadow: #422800 4px 4px 0 0;
-    color: #422800;
-    cursor: pointer;
-    display: inline-block;
+  .testimonials .details .button {
+    width: 40%;
+  
     font-weight: 600;
     font-size: 18px;
     padding: 0 18px;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
 
     text-decoration: none;
-  
   }
-  
+
   .testimonials .details .button:hover {
     background-color: #fff;
   }
-  
+
   .testimonials .details .button:active {
     box-shadow: #422800 2px 2px 0 0;
     transform: translate(2px, 2px);
   }
-  
-  @media (min-width: 768px) {
-    .testimonials .details .button {
-      min-width: 120px;
-      padding: 0 25px;
-    }
-  }
 
 
-   .testimonials .review-box{
-    width: 100%; ;
+
+  .testimonials .review-box {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 80px;
-    margin : 100px 0 120px;
+    margin: 100px 0 120px;
+  }
 
-}
-
-.testimonials .review-box .reviews{
+  .testimonials .review-box .reviews {
     display: flex;
     justify-content: space-between;
 
     width: 100%;
-}
-.testimonials .review-box .reviews .review{
+  }
+  .testimonials .review-box .reviews .review {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 8px;
     text-align: center;
-}
-.testimonials .review-box .reviews .gap{
+  }
+  .testimonials .review-box .reviews .gap {
     flex: 0.8;
-}
-.testimonials .review-box .reviews .review h2{
+  }
+  .testimonials .review-box .reviews .review h2 {
     font-size: 22px;
     font-weight: 600;
     font-family: var(--font5);
     line-height: 24px;
-}
-.testimonials .review-box .reviews .review p{
+  }
+  .testimonials .review-box .reviews .review p {
     font-size: 16px;
     font-weight: 600;
     font-family: var(--font5);
     color: rgb(44, 43, 43);
     line-height: 1.5;
-}
-
-@media screen and (max-width: 768px){
+  }
 }
