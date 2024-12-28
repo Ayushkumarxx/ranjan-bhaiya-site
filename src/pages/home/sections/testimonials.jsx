@@ -4,7 +4,6 @@ import { MdOutlineStar } from "react-icons/md";
 import { GoArrowUpRight } from "react-icons/go";
 import { BsStars } from "react-icons/bs";
 
-
 const Testimonials = () => {
   let testRef = useRef(null);
 
@@ -20,9 +19,6 @@ const Testimonials = () => {
           about us
         </p>
       </div>
- 
-
-     
 
       <div className="review-box">
         <div className="reviews">
@@ -30,55 +26,60 @@ const Testimonials = () => {
             <h2>The best driven production company</h2>
             <p>ayush kumar</p>
           </div>
-          <div className="review gap"></div>
+          <div className="gap"></div>
 
-          <div className="review">
+          <div className="review no-mob-review">
             <h2>The quality of work is outstanding</h2>
             <p>nigesh kumar</p>
           </div>
-          <div className="review gap"></div>
+          <div className="gap-mob"></div>
+          <div className="gap"></div>
 
           <div className="review">
             <h2>They are very punctual and professional</h2>
             <p>rohit kumar</p>
           </div>
         </div>
+
+        <div className="reviews mob-reviews">
+        <div className="gap-mob"></div>
+          <div className="review">
+            <h2>The best driven production company</h2>
+            <p>ayush kumar</p>
+          </div>
+          <div className="gap-mob"></div>
+          
+        </div>
+
         <div className="reviews">
-        <div className="review "></div>
+          <div className="review no-mob-review"></div>
 
           <div className="review">
             <h2>The best driven production company</h2>
             <p>ayush kumar</p>
           </div>
+          <div className="gap-mob"></div>
           <div className="review gap"></div>
           <div className="review">
             <h2>The quality of work is outstanding</h2>
             <p>nigesh kumar</p>
           </div>
-          <div className="review "></div>
-
-         
+          <div className="review no-mob-review"></div>
         </div>
       </div>
-       <div className="details">
+      <div className="details">
         <div className="rating">
-            <div className="heading">
-                4.6 <MdOutlineStar className="rating-star" />
-            </div>
-            <p className="text">
-               stars out of 5
-            </p>
+          <div className="heading">
+            4.6 <MdOutlineStar className="rating-star" />
+          </div>
+          <p className="text">stars out of 5</p>
         </div>
         <div className="response">
-        <div className="heading">
-                24 hours
-            </div>
-            <p className="text">
-                avg. response time
-            </p>
+          <div className="heading">24 hours</div>
+          <p className="text">avg. response time</p>
         </div>
         <div className="button">
-            See 227+ review on Google <GoArrowUpRight className="arrow" />
+          See 227+ review on Google <GoArrowUpRight className="arrow" />
         </div>
       </div>
     </section>
