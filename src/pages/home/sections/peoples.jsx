@@ -95,11 +95,9 @@ const Peoples = () => {
           </>
         ) : (
           <div className="text">
-            We make it easy for you to
-            <span className="image">
+            We make it easy  <span className="image">
               <img src={show4} alt="" />
-            </span>
-            capture the best
+            </span>for you to capture the best
             <span className="image">
               <img src={show5} alt="" />
             </span>

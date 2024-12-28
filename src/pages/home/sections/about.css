@@ -1,5 +1,5 @@
 .about {
-max-width: 1400px;
+  max-width: 1400px;
   margin: auto;
   margin-top: 10vh;
   display: flex;
@@ -11,35 +11,192 @@ max-width: 1400px;
   flex: 1;
   display: flex;
   flex-direction: column;
-
-
 }
-.about .textNbutton{
-   align-items: flex-start;
-   justify-content: center;
-
-   
-
+.about .textNbutton {
+  align-items: flex-start;
+  justify-content: center;
 }
-.about .textNbutton .head span{
+.about .textNbutton .head span {
+  display: block;
+}
+.about .textNbutton .head {
+  font-size: 56px;
+  font-weight: 600;
+  font-family: var(--font2);
+  margin-bottom: 20px;
+}
+
+.about .textNbutton .text {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--font4);
+  width: 80%;
+  margin-bottom: 30px;
+}
+.about .textNbutton .button button {
+  background-color: transparent;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px;
+  font-family: var(--font2);
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+}
+
+.about .image-box {
+  align-items: center;
+}
+
+.about .image-box .border {
+  width: 70%;
+  height: 500px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, var(--bg-color) 40%);
+  border-radius: 500px;
+  overflow: hidden;
+  padding: 2px;
+}
+.about .image-box .border .padding {
+  width: 100%;
+  height: 100%;
+  border-radius: 500px;
+  overflow: hidden;
+  background: var(--bg-color);
+  padding: 15px;
+}
+
+.about .image-box .border .image {
+  width: 100%;
+  height: 100%;
+  border-radius: 500px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.about .image-box .border .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about .aboutOwner {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.about .aboutOwner .text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+.about .aboutOwner .text-box .star {
+  font-size: 60px;
+}
+
+.about .aboutOwner .text-box p {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: var(--font5);
+  width: 80%;
+}
+.about .owner {
+  position: relative;
+}
+.about .aboutOwner .owner .image {
+  width: 300px;
+  height: 200px;
+  border-radius: 200px;
+  overflow: hidden;
+}
+
+.about .aboutOwner .owner .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.about .aboutOwner .owner .instaLink {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #e1e1e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 40px;
+}
+
+.about .aboutOwner .owner .instaLink .insta,
+.about .aboutOwner .owner .whatsLink .whats {
+  font-size: 24px;
+  color: #000;
+}
+.about .aboutOwner .owner .whatsLink {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #e1e1e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  right: 5px;
+}
+.about .aboutOwner .owner .text {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: var(--font5);
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px 10px;
+  }
+
+  .about .child {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .about .textNbutton {
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .about .textNbutton .head span {
     display: block;
-}
-.about .textNbutton .head{
+  }
+  .about .textNbutton .head {
     font-size: 56px;
     font-weight: 600;
     font-family: var(--font2);
     margin-bottom: 20px;
-   
-}
+  }
 
-.about .textNbutton .text{
+  .about .textNbutton .text {
     font-size: 16px;
     font-weight: 400;
     font-family: var(--font4);
     width: 80%;
     margin-bottom: 30px;
-}
-.about .textNbutton .button button{
+  }
+  .about .textNbutton .button button {
     background-color: transparent;
     border-width: 2px;
     box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
@@ -54,89 +211,86 @@ max-width: 1400px;
     border-bottom-right-radius: 225px 15px;
     border-top-left-radius: 255px 15px;
     border-top-right-radius: 15px 225px;
-}
+  }
 
-
-.about .image-box{
+  .about .image-box {
     align-items: center;
-}
+  }
 
-.about .image-box .border{
+  .about .image-box .border {
     width: 70%;
     height: 500px;
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, var(--bg-color) 40%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 0%,
+      var(--bg-color) 40%
+    );
     border-radius: 500px;
     overflow: hidden;
     padding: 2px;
-}
-.about .image-box .border .padding{
+  }
+  .about .image-box .border .padding {
     width: 100%;
     height: 100%;
     border-radius: 500px;
     overflow: hidden;
     background: var(--bg-color);
     padding: 15px;
-}
+  }
 
-.about .image-box .border .image{
+  .about .image-box .border .image {
     width: 100%;
     height: 100%;
     border-radius: 500px;
     background: #fff;
     overflow: hidden;
-   
-}
+  }
 
-.about .image-box .border .image img{
+  .about .image-box .border .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
-}   
+  }
 
-.about .aboutOwner{
-
+  .about .aboutOwner {
     justify-content: space-between;
     align-items: flex-end;
-
-   
-}
-.about .aboutOwner .text-box{
+  }
+  .about .aboutOwner .text-box {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 20px;
-}
-.about .aboutOwner .text-box .star{
+  }
+  .about .aboutOwner .text-box .star {
     font-size: 60px;
-}
+  }
 
-.about .aboutOwner .text-box p{
+  .about .aboutOwner .text-box p {
     font-size: 18px;
     font-weight: 300;
-    font-family: var(--font5);  
+    font-family: var(--font5);
     width: 80%;
-}
-.about .owner {
+  }
+  .about .owner {
     position: relative;
-}
-.about .aboutOwner .owner .image{
-   width: 300px;
-   height: 200px;
-   border-radius: 200px;
-   overflow: hidden;
+  }
+  .about .aboutOwner .owner .image {
+    width: 300px;
+    height: 200px;
+    border-radius: 200px;
+    overflow: hidden;
+  }
 
-
-}
-
-.about .aboutOwner .owner .image img{
+  .about .aboutOwner .owner .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
-}
-.about .aboutOwner .owner .instaLink{
+  }
+  .about .aboutOwner .owner .instaLink {
     width: 50px;
     height: 50px;
     border-radius: 50px;
@@ -146,14 +300,14 @@ max-width: 1400px;
     align-items: center;
     position: absolute;
     bottom: 40px;
+  }
 
-}
-
-.about .aboutOwner .owner .instaLink .insta, .about .aboutOwner .owner .whatsLink .whats{
+  .about .aboutOwner .owner .instaLink .insta,
+  .about .aboutOwner .owner .whatsLink .whats {
     font-size: 24px;
     color: #000;
-}
-.about .aboutOwner .owner .whatsLink{
+  }
+  .about .aboutOwner .owner .whatsLink {
     width: 50px;
     height: 50px;
     border-radius: 50px;
@@ -164,10 +318,11 @@ max-width: 1400px;
     position: absolute;
     top: 0px;
     right: 5px;
-}
-.about .aboutOwner .owner .text{
+  }
+  .about .aboutOwner .owner .text {
     font-size: 18px;
     font-weight: 300;
     font-family: var(--font5);
     margin-top: 20px;
+  }
 }
