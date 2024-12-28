@@ -267,13 +267,13 @@
       gap: 5px;
   }
   .fewDetails .child h2{
-      font-size: 32px;
+      font-size: 24px;
       font-weight: 600;
       font-family: var(--font2);
   
   }
   .fewDetails .child .text{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     font-family: var(--font7);
   }
