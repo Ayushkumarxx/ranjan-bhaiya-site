@@ -186,7 +186,7 @@
   }
 
   .testimonials .details .text {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     font-family: var(--font4);
     margin-top: 5px;
@@ -196,8 +196,8 @@
     width: 40%;
   
     font-weight: 600;
-    font-size: 16px;
-    padding: 0 18px;
+    font-size: 14px;
+    padding: 0 12px;
 
     display: flex;
     align-items: center;
@@ -219,9 +219,10 @@
 
   .testimonials .review-box {
     width: 95%;
+    
    
-    gap: 50px;
-    margin: 100px 0 120px;
+    gap: 40px;
+    margin: 100px auto 120px auto;
   }
 
   .testimonials .review-box .reviews {
