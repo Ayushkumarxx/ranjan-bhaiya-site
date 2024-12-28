@@ -31,7 +31,7 @@ const Service = () => {
           {isWideScreen ? (<>
             we are specialised in <br />
             photography and videography <br /> for weddings and events</>): (<>
-              we are specialised in <br />
+              we are specialised in<br />
               photography</>)}
           
         </div>
