@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./services.css";
 import { event, hero3,  show4, show6 } from "../../../assets";
 import { MdArrowForwardIos } from "react-icons/md";
 import { FiArrowRight } from "react-icons/fi";
 import { BsStars } from "react-icons/bs";
 const Service = () => {
+    const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 700);
+      useEffect(() => {
+        const handleResize = () => {
+          setIsWideScreen(window.innerWidth > 700);
+        };
+        window.addEventListener("resize", handleResize);
+    
+        return () => {
+          window.removeEventListener("resize", handleResize);
+        };
+      }, []);
   return (
     <section className="service">
         
@@ -17,8 +28,12 @@ const Service = () => {
       </div>
       <div className="head-2">
         <div className="small">
-          we are specialised in <br />
-          photography and videography <br /> for weddings and events
+          {isWideScreen ? (<>
+            we are specialised in <br />
+            photography and videography <br /> for weddings and events</>): (<>
+              we are specialised in <br />
+              photography</>)}
+          
         </div>
         <div className="big">/ Services</div>
         <BsStars className="abs-star" />
