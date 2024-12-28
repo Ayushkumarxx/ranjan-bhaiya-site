@@ -85,7 +85,7 @@
     width: 100%;
     margin-top: 15vh;
     background: #f6f6f6;
-    padding: 10vh ;
+    padding: 10vh 0;
   }
 
   .ourWork .head {
@@ -106,7 +106,7 @@
   .ourWork .head .work,
   .ourWork .head .our,
   .ourWork .head .text {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 500;
     font-family: var(--font2);
   }
