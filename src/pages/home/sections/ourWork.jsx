@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState , useEffect} from "react";
 import "./ourWork.css";
 import { BsStars } from "react-icons/bs";
 import { useRef } from "react";
@@ -37,28 +37,35 @@ const OurWork = () => {
   }, {scope : gridRef, });
 
   //? generate random indexes for grid
-  const  gridItem = [
-    2, 6,
-    4, 5,
-    6, 2,
-    5, 4,
-    6, 2,
-    5, 3,
-    2, 6,
-    4, 3
+  const [gridItem, setGridItem] = useState([]);
+  const [iconTextIndex, setIconTextIndex] = useState([]);
 
-     
-  ]
-  let iconTextIndex = [
-    5,
-    3,
-    5,
-    3,
-    4,
-    2,
-    5,
-    6
-  ]
+  useEffect(() => {
+    const updateArrays = () => {
+      if (window.innerWidth > 700) {
+        // Screen width is larger than 700px
+        setGridItem(
+          [2, 6, 4, 5, 6, 2, 5, 4, 6, 2, 5, 3, 2, 6, 4, 3]
+        );
+        setIconTextIndex([5, 3, 5, 3, 4, 2, 5, 6]);
+      } else {
+        // Screen width is smaller than or equal to 700px
+        setGridItem([1, 3, 2, 4, 3, 1, 4, 2, 4, 1, 3, 4, 1, 2, 2, 4]);
+        setIconTextIndex([2, 3, 2, 1, 2, 1, 4, 1]);
+      }
+    };
+
+    // Call updateArrays initially
+    updateArrays();
+
+    // Add an event listener for window resize
+    window.addEventListener("resize", updateArrays);
+
+    // Cleanup the event listener
+    return () => {
+      window.removeEventListener("resize", updateArrays);
+    };
+  }, []);
   let iconText = [
     <p className="text"> We Listen</p>,
     <BsStars className="icon" />,
