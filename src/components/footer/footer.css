@@ -173,7 +173,7 @@ footer .box-2{
     }
     .footer .text{
         font-family: var(--font3);
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 600;
         margin-bottom: 50px;
         position: relative;
@@ -181,10 +181,10 @@ footer .box-2{
         
     }
     .footer .text img{
-        width: 60px;
+        width: 50px;
         position: absolute;
         top: 150%;
-        right: 10%;
+        right: 5%;
         transform: scaleX(-1);
         rotate: 240deg;
     }
@@ -224,13 +224,13 @@ footer .box-2{
         align-items: center;
     }
     .footer .socials .icon .i{
-        font-size: 18px;
+        font-size: 16px;
         color: #727578;
         margin-right: 5px;
     }
     .footer .socials .icon .linkName{
         font-family: var(--font3);
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 600;
         color: #727578;
     }
@@ -238,7 +238,7 @@ footer .box-2{
     footer {
         width: 95%;
        
-        height: 85px;
+        height: 75px;
         
        
         padding: 0px 25px;
@@ -257,11 +257,11 @@ footer .box-2{
     }
     footer .box-1 p{
         font-family: var(--font3);
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 600;
     }
     footer .box-2{
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 600;
         font-family: var(--font3);
         color: #727578;
