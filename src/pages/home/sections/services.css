@@ -173,14 +173,12 @@
   .service .head-1 .big,
   .service .head-2 .big {
     font-size: 42px;
-    font-weight: 500;
-    font-family: var(--font2);
+  
   }
   .service .head-1 .small,
   .service .head-2 .small {
     font-size: 14px;
-    font-weight: 600;
-    font-family: var(--font4);
+   
   }
   .service .head-2 {
     margin-bottom: 50px;
@@ -199,10 +197,13 @@
     height: 100%;
   }
   .service .our-service .image-box .image {
-    width: 45%;
+    width: 95%;
     position: relative;
     overflow: hidden;
     border-radius: 150px;
+  }
+  .service .our-service .image-box .image:nth-child(2) {
+      display: none;
   }
   .service .our-service .image-box .image img {
     width: 100%;
