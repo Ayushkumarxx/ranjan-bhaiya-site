@@ -4,7 +4,7 @@ import { LuSparkles } from "react-icons/lu";
 import { HiOutlineSparkles } from "react-icons/hi2";
 import { RxDoubleArrowDown } from "react-icons/rx";
 import { BsStars } from "react-icons/bs";
-import { hero1, hero2, show1, show2, show3, show5 } from "../../../assets";
+import {  show1, show2, show3, show5 } from "../../../assets";
 const Showcase = () => {
   return (
     <section className="showcase-container">

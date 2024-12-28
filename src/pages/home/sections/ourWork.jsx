@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useLayoutEffect } from "react";
+import React from "react";
 import "./ourWork.css";
 import { BsStars } from "react-icons/bs";
 import { useRef } from "react";

@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import { hero3, owner, show4 } from "../../../assets";
+import {  owner, show4 } from "../../../assets";
 import { BsStars } from "react-icons/bs";
 import { FiInstagram } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";

@@ -1,6 +1,6 @@
 import React from "react";
 import "./services.css";
-import { event, hero3, show2, show3, show4, show5, show6 } from "../../../assets";
+import { event, hero3,  show4, show6 } from "../../../assets";
 import { MdArrowForwardIos } from "react-icons/md";
 import { FiArrowRight } from "react-icons/fi";
 import { BsStars } from "react-icons/bs";

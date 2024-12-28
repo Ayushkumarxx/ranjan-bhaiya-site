@@ -1,8 +1,6 @@
 import React, { useRef } from "react";
 import "./testimonials.css";
 import { MdOutlineStar } from "react-icons/md";
-import { IoLocationOutline } from "react-icons/io5";
-import { testimonialData } from "../../../utils/export";
 import { GoArrowUpRight } from "react-icons/go";
 import { BsStars } from "react-icons/bs";
 
