@@ -141,3 +141,6 @@
     color: rgb(44, 43, 43);
     line-height: 1.5;
 }
+
+@media screen and (max-width: 768px){
+}
