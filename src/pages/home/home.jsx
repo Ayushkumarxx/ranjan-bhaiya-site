@@ -1,4 +1,4 @@
-import React, { useState, useEffect , useRef} from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
   About,
   Footer,
@@ -11,30 +11,22 @@ import {
 } from "../../utils/export";
 import "./home.css";
 import { hero1, hero2, hero3 } from "../../assets";
-import { BsStars , BsHeart, BsLightning} from "react-icons/bs";
+import { BsStars, BsHeart, BsLightning } from "react-icons/bs";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
-
 const MarqueeSection = ({ items }) => {
   return (
-
-     
-        <section 
-  
-          className={`move ${items.className}`} 
-          id={items.id}
-        >
-          {Array.from({ length: items.numChildren }, (_, childIndex) => (
-            <div className="marquee" key={childIndex}>
-              <h2>{items.text}</h2>
-              <div className="icon">
-                <items.icon className="star" />
-              </div>
-            </div>
-          ))}
-        </section>
-
+    <section className={`move ${items.className}`} id={items.id}>
+      {Array.from({ length: items.numChildren }, (_, childIndex) => (
+        <div className="marquee" key={childIndex}>
+          <h2>{items.text}</h2>
+          <div className="icon">
+            <items.icon className="star" />
+          </div>
+        </div>
+      ))}
+    </section>
   );
 };
 const Home = () => {
@@ -49,7 +41,7 @@ const Home = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-   
+
   const marqueeData = [
     {
       text: "THRIVE BEYOND LIMITS",
@@ -65,36 +57,37 @@ const Home = () => {
       className: "hearts-marquee",
       id: "hearts",
     },
-    {
-      text: "LIGHTNING STRIKES TWICE",
-      icon: BsLightning,
-      numChildren: 4,
-      className: "lightning-marquee",
-      id: "lightning",
-    },
   ];
   let moveRef = useRef(null);
   let moveRef2 = useRef(null);
-  useGSAP(()=> {
-   
-    gsap.to(".marquee", {
-      transform: "translateX(-200%)",
-      ease: "linear",
-      repeat: -1,
-      duration: 3,
-    });
-  }, {scope : moveRef});
-  useGSAP(()=> {
-   
-    gsap.to(".marquee", {
-      transform: "translateX(0%)",
-      ease: "linear",
-      repeat: -1,
-      duration: 3,
-    });
-  }, {scope : moveRef2});
+  useGSAP(
+    () => {
+      gsap.to(".marquee", {
+        transform: "translateX(-200%)",
+        ease: "none",
+        repeat: -1,
+        duration: 3,
+      });
+    },
+    { scope: moveRef }
+  );
+  useGSAP(
+    () => {
+      gsap.to(".marquee", {
+        transform: "translateX(0%)",
+        ease: "none",
+        repeat: -1,
+        duration: 3,
+      });
+    },
+    { scope: moveRef2 }
+  );
   return (
     <>
+
+    <section className="intro">
+      
+    </section>
       <Navbar />
       <section className="hero">
         <div className="heroText">
@@ -203,17 +196,15 @@ const Home = () => {
       <Testimonials />
 
       <section className="two-marquee">
-      <section className="marquee-one" ref={moveRef}>
-     <MarqueeSection items={marqueeData[0]}/>
-     </section>
-     
-     <section className="marquee-two" ref={moveRef2}>
-     <MarqueeSection items={marqueeData[1]}/>
-     </section>
+        <section className="marquee-one" ref={moveRef}>
+          <MarqueeSection items={marqueeData[0]} />
+        </section>
+
+        <section className="marquee-two" ref={moveRef2}>
+          <MarqueeSection items={marqueeData[1]} />
+        </section>
       </section>
 
-    
-    
       <Footer />
     </>
   );
