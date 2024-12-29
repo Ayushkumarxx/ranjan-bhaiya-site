@@ -85,7 +85,6 @@ const Home = () => {
   //   { scope: moveRef2 }
   // );
 
-  let introRef = useRef(null);
   let heroNnavRef = useRef(null);
   let timelineRef = useRef(null);
 
@@ -93,48 +92,112 @@ const Home = () => {
     () => {
       timelineRef.current = gsap.timeline();
 
-      timelineRef.current.from(".textNicon", {
+      timelineRef.current.from(".intro-content .textNicon", {
         opacity: 0,
         y: 100,
         duration: 1,
       });
 
-      timelineRef.current.to(".text", { opacity: 0, duration: 1 });
 
-      timelineRef.current.to(".open", {
-        height: "100%",
-        duration: 1,
-        ease: "expo.inOut",
-      });
-      timelineRef.current.to(".side", {
+      timelineRef.current.to(
+        ".intro-content .text",
+        {
+         opacity: 0,
+          duration: 1,
+          color:"#F9AB65",
+        },
+        "+=0.5"
+      );
+
+      timelineRef.current.to(
+        ".intro-content .open",
+        {
+          clipPath:"circle(100%)",
+          duration: 0.8,
+          ease: "expo.inOut",
+        },
+        "-=0.5"
+      );
+      timelineRef.current.to(".intro-content .side", {
         width: "100%",
-        duration: 1,
+        duration: 0.8,
         ease: "expo.inOut",
       });
-      timelineRef.current.to(introRef.current, {
+      timelineRef.current.to(".intro", {
         opacity: 0,
         display: "none",
-        duration: 0.5,
+        duration: 0.2,
       });
+
+      timelineRef.current.from(
+        "#nav .ani-same-nav",
+        {
+          opacity: 0,
+          y: 20,
+          stagger: 0.1,
+          duration: 0.5,
+        },
+        "nav-=0.2"
+      );
+      timelineRef.current.from(
+        "#nav .direction",
+        {
+          opacity: 0,
+
+          duration: 0.5,
+        },
+        "nav"
+      );
+
+      timelineRef.current.from(
+        ".hero .heroText .text span",
+        {
+          opacity: 0,
+          y: 20,
+          stagger: 0.1,
+          duration: 1,
+        },
+        "hero-=0.3"
+      );
+      timelineRef.current.from(
+        ".hero .heroText .button",
+        {
+          opacity: 0,
+          y: 20,
+
+          duration: 1,
+        },
+        "hero"
+      );
+      timelineRef.current.from(
+        ".hero .heroImage .child",
+        {
+          opacity: 0,
+          x: -40,
+          stagger: 0.2,
+          duration: 1,
+        },
+        "hero"
+      );
     },
-    { scope: introRef }
+
+    { scope: heroNnavRef }
   );
   return (
     <>
-      <section className="intro" ref={introRef}>
-        <div className="intro-content">
-          <div className="text">
-            <div className="textNicon">
-              <h2>RANJAN STUDIO </h2>
-            </div>
-          </div>
-          <div className="open"></div>
-          <div className="side"></div>
-        </div>
-      </section>
-
       <section ref={heroNnavRef}>
-        {" "}
+        <section className="intro">
+          <div className="intro-content">
+            <div className="text">
+              <div className="textNicon">
+                <h2>RANJAN STUDIO </h2>
+              </div>
+            </div>
+            <div className="open"></div>
+            <div className="side"></div>
+          </div>
+        </section>
+
         <Navbar />
         <section className="hero">
           <div className="heroText">

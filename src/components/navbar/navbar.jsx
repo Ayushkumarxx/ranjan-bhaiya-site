@@ -4,17 +4,17 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav id='nav'>
         <div className="headNlinks">
-           <div className="head">
+           <div className="head ani-same-nav">
              RS
            </div>
            <div className="links">
               <ol>
-                <li><a href="#">OUR STORY</a></li>
-                <li><a href="#">PHOTOS ALBUM</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <li><a href="#">SERVICES</a></li>
+                <li className='ani-same-nav'><a href="#">OUR STORY</a></li>
+                <li className='ani-same-nav'><a href="#">PHOTOS ALBUM</a></li>
+                <li className='ani-same-nav'><a href="#">CONTACT</a></li>
+                <li className='ani-same-nav'><a href="#">SERVICES</a></li>
               </ol>
            </div>
         </div>
