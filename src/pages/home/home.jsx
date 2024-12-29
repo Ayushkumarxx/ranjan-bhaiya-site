@@ -62,28 +62,28 @@ const Home = () => {
   ];
   let moveRef = useRef(null);
   let moveRef2 = useRef(null);
-  // useGSAP(
-  //   () => {
-  //     gsap.to(".marquee", {
-  //       transform: "translateX(-200%)",
-  //       ease: "none",
-  //       repeat: -1,
-  //       duration: 3,
-  //     });
-  //   },
-  //   { scope: moveRef }
-  // );
-  // useGSAP(
-  //   () => {
-  //     gsap.to(".marquee", {
-  //       transform: "translateX(0%)",
-  //       ease: "none",
-  //       repeat: -1,
-  //       duration: 3,
-  //     });
-  //   },
-  //   { scope: moveRef2 }
-  // );
+  useGSAP(
+    () => {
+      gsap.to(".marquee", {
+        transform: "translateX(-200%)",
+        ease: "none",
+        repeat: -1,
+        duration: 3,
+      });
+    },
+    { scope: moveRef }
+  );
+  useGSAP(
+    () => {
+      gsap.to(".marquee", {
+        transform: "translateX(0%)",
+        ease: "none",
+        repeat: -1,
+        duration: 3,
+      });
+    },
+    { scope: moveRef2 }
+  );
 
   let heroNnavRef = useRef(null);
   let timelineRef = useRef(null);
