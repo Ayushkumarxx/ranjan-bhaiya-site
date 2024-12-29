@@ -5,7 +5,7 @@ import { FaInstagram } from "react-icons/fa6";
 import { ImWhatsapp } from "react-icons/im";
 import { FaFacebook } from "react-icons/fa";
 import { MdCamera } from "react-icons/md";
-import { lines, upArrow } from '../../assets';
+import { lines, upArrow , upArrow1} from '../../assets/index';
 import { BsStars } from "react-icons/bs";
 const Footer = () => {
   return (
@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="head">
             <span className="diff">Ranjan</span>/Studio
         </div>
-        <div className="text">we capture the best moments of your life and make them last forever! <img src={upArrow} className="abs-arrow" alt="" /></div>
+        <div className="text">we capture the best moments of your life and make them last forever! <img src={upArrow1} className="abs-arrow" alt="" /></div>
          <button>
              <RxDoubleArrowDown className="arrow"/> Contact us <RxDoubleArrowDown className="arrow"/>
          </button>

@@ -9,6 +9,7 @@ import show5 from "./show-5.jpg";
 import show6 from "./show-6.jpg";
 import owner from  "./owner.webp"
 import upArrow from "./up-arrow.png";
+import upArrow1 from "./up-arrow-1.png";
 import lines from "./lines.png";
 import event from "./event.jpg";
-export { hero1, hero2, hero3, show1, show2 , show3, show4, show5, show6, owner, upArrow, lines, event };
+export { hero1, hero2, hero3, show1, show2 , show3, show4, show5, show6, owner, upArrow,upArrow1, lines, event };

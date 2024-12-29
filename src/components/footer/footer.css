@@ -34,7 +34,7 @@
 
 }
 .footer .head .diff{
-    color: #45D676;
+    color: #422800;
 }
 .footer .text{
     font-family: var(--font3);
@@ -168,9 +168,7 @@ footer .box-2{
 
     
     }
-    .footer .head .diff{
-        color: #45D676;
-    }
+
     .footer .text{
         font-family: var(--font3);
         font-size: 14px;
@@ -202,6 +200,7 @@ footer .box-2{
     .footer button .arrow{
         margin: 0 5px;
     }
+    /*#45D676 */
     .footer button:hover{
         background-color: #45D676;
         color: #fff;
