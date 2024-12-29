@@ -18,23 +18,19 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: #000;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
     font-family: var(--font1);
-
+ 
     overflow: hidden;
     z-index: 5;
 
 }
-.intro-content .text .textNicon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+.intro-content .text span{
+    display: inline-block;
+  
 }
-.intro-content .text .textNicon .i{
-    font-size: 32px;
-}
+
 
 
 .intro-content .open{

@@ -92,19 +92,23 @@ const Home = () => {
     () => {
       timelineRef.current = gsap.timeline();
 
-      timelineRef.current.from(".intro-content .textNicon", {
+      timelineRef.current.from(".intro-content #studio-text span", {
         opacity: 0,
-        y: 100,
-        duration: 1,
+      
+   
+  
+    
+        duration: 0.3,
+        stagger: 0.1,
+        ease: "power1.inOut",
       });
-
 
       timelineRef.current.to(
         ".intro-content .text",
         {
-         opacity: 0,
+          opacity: 0,
           duration: 1,
-          color:"#F9AB65",
+          color: "#F9AB65",
         },
         "+=0.5"
       );
@@ -112,7 +116,7 @@ const Home = () => {
       timelineRef.current.to(
         ".intro-content .open",
         {
-          clipPath:"circle(100%)",
+          clipPath: "circle(100%)",
           duration: 0.8,
           ease: "expo.inOut",
         },
@@ -189,9 +193,23 @@ const Home = () => {
         <section className="intro">
           <div className="intro-content">
             <div className="text">
-              <div className="textNicon">
-                <h2>RANJAN STUDIO </h2>
-              </div>
+ 
+                <h2 id="studio-text">
+                  <span>R</span>
+                  <span>A</span>
+                  <span>N</span>
+                  <span>J</span>
+                  <span>A</span>
+                  <span>N</span>
+                  <span>&nbsp;</span>
+                  <span>S</span>
+                  <span>T</span>
+                  <span>U</span>
+                  <span>D</span>
+                  <span>I</span>
+                  <span>O</span>
+                </h2>
+         
             </div>
             <div className="open"></div>
             <div className="side"></div>
