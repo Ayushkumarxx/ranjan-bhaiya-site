@@ -1,0 +1,59 @@
+.intro{
+    width: 100%;
+    height: 100vh;
+  
+    position: fixed;
+    z-index: 999;
+    background-color: #fff;
+    
+}
+.intro-content{
+    width: 100%;
+    height: 100vh;
+    position: relative;;
+}
+.intro-content .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--font1);
+
+    overflow: hidden;
+    z-index: 5;
+
+}
+.intro-content .text .textNicon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.intro-content .text .textNicon .i{
+    font-size: 32px;
+}
+
+
+.intro-content .open{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 0%;
+    background: #F9AB65;
+    z-index: 1;
+}
+
+.intro-content .side{
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   width: 0%;
+   background: #fff;
+   z-index: 10;
+}

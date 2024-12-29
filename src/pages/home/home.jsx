@@ -10,8 +10,10 @@ import {
   Testimonials,
 } from "../../utils/export";
 import "./home.css";
+import "./intro.css";
 import { hero1, hero2, hero3 } from "../../assets";
-import { BsStars, BsHeart, BsLightning } from "react-icons/bs";
+import { BsStars, BsHeart } from "react-icons/bs";
+
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -60,101 +62,147 @@ const Home = () => {
   ];
   let moveRef = useRef(null);
   let moveRef2 = useRef(null);
+  // useGSAP(
+  //   () => {
+  //     gsap.to(".marquee", {
+  //       transform: "translateX(-200%)",
+  //       ease: "none",
+  //       repeat: -1,
+  //       duration: 3,
+  //     });
+  //   },
+  //   { scope: moveRef }
+  // );
+  // useGSAP(
+  //   () => {
+  //     gsap.to(".marquee", {
+  //       transform: "translateX(0%)",
+  //       ease: "none",
+  //       repeat: -1,
+  //       duration: 3,
+  //     });
+  //   },
+  //   { scope: moveRef2 }
+  // );
+
+  let introRef = useRef(null);
+  let heroNnavRef = useRef(null);
+  let timelineRef = useRef(null);
+
   useGSAP(
     () => {
-      gsap.to(".marquee", {
-        transform: "translateX(-200%)",
-        ease: "none",
-        repeat: -1,
-        duration: 3,
+      timelineRef.current = gsap.timeline();
+
+      timelineRef.current.from(".textNicon", {
+        opacity: 0,
+        y: 100,
+        duration: 1,
+      });
+
+      timelineRef.current.to(".text", { opacity: 0, duration: 1 });
+
+      timelineRef.current.to(".open", {
+        height: "100%",
+        duration: 1,
+        ease: "expo.inOut",
+      });
+      timelineRef.current.to(".side", {
+        width: "100%",
+        duration: 1,
+        ease: "expo.inOut",
+      });
+      timelineRef.current.to(introRef.current, {
+        opacity: 0,
+        display: "none",
+        duration: 0.5,
       });
     },
-    { scope: moveRef }
-  );
-  useGSAP(
-    () => {
-      gsap.to(".marquee", {
-        transform: "translateX(0%)",
-        ease: "none",
-        repeat: -1,
-        duration: 3,
-      });
-    },
-    { scope: moveRef2 }
+    { scope: introRef }
   );
   return (
     <>
-
-    <section className="intro">
-      
-    </section>
-      <Navbar />
-      <section className="hero">
-        <div className="heroText">
+      <section className="intro" ref={introRef}>
+        <div className="intro-content">
           <div className="text">
-            {isWideScreen > 700 ? (
-              <h1>
-                <span>SAVE</span>
-                <span>THE</span>
-                <span>DATES</span>
-              </h1>
-            ) : (
-              <h1>
-                <span>SAVE THE</span>
-
-                <span>DATES</span>
-              </h1>
-            )}
+            <div className="textNicon">
+              <h2>RANJAN STUDIO </h2>
+            </div>
           </div>
-
-          <div className="button">
-            <button>Book now</button>
-          </div>
+          <div className="open"></div>
+          <div className="side"></div>
         </div>
-        <div className="heroImage">
-          <div className="child">
-            <div className="image">
-              <img src={hero1} alt="" />
-            </div>
-            <div className="arcNtext">
-              <div className="arc"></div>
-              <div className="text">
-                <p>Ranjan</p>
-                <h2>We Provide</h2>
-              </div>
-            </div>
-          </div>
+      </section>
 
-          <div className="child">
-            <div className="image">
-              <img src={hero2} alt="" />
-            </div>
-            <div className="arcNtext">
-              <div className="arc"></div>
-              <div className="text">
-                <p>studio</p>
-                <h2>The Best </h2>
-              </div>
-            </div>
-          </div>
+      <section ref={heroNnavRef}>
+        {" "}
+        <Navbar />
+        <section className="hero">
+          <div className="heroText">
+            <div className="text">
+              {isWideScreen > 700 ? (
+                <h1>
+                  <span>SAVE</span>
+                  <span>THE</span>
+                  <span>DATES</span>
+                </h1>
+              ) : (
+                <h1>
+                  <span>SAVE THE</span>
 
-          <div className="child">
-            <div className="image">
-              <img src={hero3} alt="" />
+                  <span>DATES</span>
+                </h1>
+              )}
             </div>
-            <div className="arcNtext">
-              <div className="arc"></div>
-              <div className="text">
-                <p>ranchi</p>
-                {isWideScreen ? (
-                  <h2>Service in Ranchi</h2>
-                ) : (
-                  <h2>Services !</h2>
-                )}
+
+            <div className="button">
+              <button>Book now</button>
+            </div>
+          </div>
+          <div className="heroImage">
+            <div className="child">
+              <div className="image">
+                <img src={hero1} alt="" />
+              </div>
+              <div className="arcNtext">
+                <div className="arc"></div>
+                <div className="text">
+                  <p>Ranjan</p>
+                  <h2>We Provide</h2>
+                </div>
+              </div>
+            </div>
+
+            <div className="child">
+              <div className="image">
+                <img src={hero2} alt="" />
+              </div>
+              <div className="arcNtext">
+                <div className="arc"></div>
+                <div className="text">
+                  <p>studio</p>
+                  <h2>The Best </h2>
+                </div>
+              </div>
+            </div>
+
+            <div className="child">
+              <div className="image">
+                <img src={hero3} alt="" />
+              </div>
+              <div className="arcNtext">
+                <div className="arc"></div>
+                <div className="text">
+                  <p>ranchi</p>
+                  {isWideScreen ? (
+                    <h2>Service in Ranchi</h2>
+                  ) : (
+                    <h2>Services !</h2>
+                  )}
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </section>
 
       <Showcase />
