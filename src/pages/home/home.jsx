@@ -90,13 +90,8 @@ const Home = () => {
 
   useGSAP(
     () => {
-      document.body.classList.add("scroll-lock");
-      timelineRef.current = gsap.timeline({
-        onComplete: () => {
-          // Re-enable scrolling by removing the 'scroll-lock' class
-          document.body.classList.remove("scroll-lock");
-        },
-      });
+     
+      timelineRef.current = gsap.timeline();
 
       timelineRef.current.from(".intro-content #studio-text span", {
         opacity: 0,
