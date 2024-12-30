@@ -241,7 +241,7 @@ const Home = () => {
             </div>
 
             <div className="button">
-              <button>Book now</button>
+              <button>Ping now</button>
             </div>
           </div>
           <div className="heroImage">

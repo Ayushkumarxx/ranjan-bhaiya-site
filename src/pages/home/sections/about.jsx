@@ -17,7 +17,7 @@ const About = () => {
           we capture the best moments of your life and make them last forever!
         </p>
         <div className="button">
-          <button>Book now</button>
+        <button>Ping now</button>
         </div>
       </div>
       <div className="child image-box">
