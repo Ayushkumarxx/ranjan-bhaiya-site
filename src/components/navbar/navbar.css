@@ -46,10 +46,10 @@ nav .ham-icon {
 }
 
 nav .mob-nav-links {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100vh;
-  top: -150%;
+  top: -110%;
   left: 0;
   z-index: 999;
   background: rgba(255, 255, 255, 0.2); 
