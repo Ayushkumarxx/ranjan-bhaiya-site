@@ -18,9 +18,14 @@
 }
 html, body {
   overflow-x: hidden;
+
 }
 body{
   background-color: var(--bg-color);
 
 
+}
+.scroll-lock {
+  overflow: hidden;
+  height: 100vh; /* Prevents scrolling on mobile devices */
 }

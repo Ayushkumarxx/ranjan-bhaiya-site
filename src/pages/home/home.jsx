@@ -90,14 +90,17 @@ const Home = () => {
 
   useGSAP(
     () => {
-      timelineRef.current = gsap.timeline();
+      document.body.classList.add("scroll-lock");
+      timelineRef.current = gsap.timeline({
+        onComplete: () => {
+          // Re-enable scrolling by removing the 'scroll-lock' class
+          document.body.classList.remove("scroll-lock");
+        },
+      });
 
       timelineRef.current.from(".intro-content #studio-text span", {
         opacity: 0,
-      
-   
-  
-    
+
         duration: 0.3,
         stagger: 0.1,
         ease: "power1.inOut",
@@ -147,11 +150,20 @@ const Home = () => {
         "#nav .direction",
         {
           opacity: 0,
-
+          y: 20,
           duration: 0.5,
         },
         "nav"
       );
+
+      timelineRef.current.from(
+        "#nav .ham-icon",
+        {
+          opacity: 0,
+          y: 20,
+          duration: 0.5,
+        },"nav");
+
 
       timelineRef.current.from(
         ".hero .heroText .text span",
@@ -193,23 +205,21 @@ const Home = () => {
         <section className="intro">
           <div className="intro-content">
             <div className="text">
- 
-                <h2 id="studio-text">
-                  <span>R</span>
-                  <span>A</span>
-                  <span>N</span>
-                  <span>J</span>
-                  <span>A</span>
-                  <span>N</span>
-                  <span>&nbsp;</span>
-                  <span>S</span>
-                  <span>T</span>
-                  <span>U</span>
-                  <span>D</span>
-                  <span>I</span>
-                  <span>O</span>
-                </h2>
-         
+              <h2 id="studio-text">
+                <span>R</span>
+                <span>A</span>
+                <span>N</span>
+                <span>J</span>
+                <span>A</span>
+                <span>N</span>
+                <span>&nbsp;</span>
+                <span>S</span>
+                <span>T</span>
+                <span>U</span>
+                <span>D</span>
+                <span>I</span>
+                <span>O</span>
+              </h2>
             </div>
             <div className="open"></div>
             <div className="side"></div>

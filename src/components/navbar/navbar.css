@@ -45,6 +45,51 @@ nav .ham-icon {
   display: none;
 }
 
+nav .mob-nav-links {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: -100%;
+  left: 0;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
+  display: none;
+  
+}
+nav .mob-nav-links .main{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font3);
+  gap: 8vh;
+  color: white;
+}
+nav .mob-nav-links .main .back{
+  width: 35px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+nav .mob-nav-links .mob-links {
+  overflow: hidden;
+}
+nav .mob-nav-links .mob-links .mob-link {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+
+
 @media screen and (max-width: 768px) {
   nav {
     align-items: center;
@@ -67,5 +112,8 @@ nav .ham-icon {
     width: 35px;
     height: 2px;
     background-color: black;
+  }
+  div .mob-nav-links {
+    display: block;
   }
 }
