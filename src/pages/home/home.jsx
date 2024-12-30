@@ -184,7 +184,7 @@ const Home = () => {
         ".hero .heroImage .child",
         {
           opacity: 0,
-          x: -40,
+          x: -20,
           stagger: 0.2,
           duration: 1,
         },
