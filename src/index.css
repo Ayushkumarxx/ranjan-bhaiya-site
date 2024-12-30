@@ -22,8 +22,12 @@ html, body {
 }
 body{
   background-color: var(--bg-color);
+  scrollbar-width: none;
 
 
+}
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
 }
 .scroll-lock {
   overflow: hidden;
