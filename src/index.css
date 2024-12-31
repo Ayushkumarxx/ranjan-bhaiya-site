@@ -19,16 +19,16 @@
 html, body {
   overflow-x: hidden;
 
+
 }
 body{
   background-color: var(--bg-color);
-  scrollbar-width: none;
+
+
 
 
 }
-body::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Edge */
-}
+
 .scroll-lock {
   overflow: hidden;
   height: 100vh; /* Prevents scrolling on mobile devices */

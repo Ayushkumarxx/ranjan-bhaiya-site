@@ -50,16 +50,16 @@ const Navbar = () => {
         <div className="links">
           <ol>
             <li className="ani-same-nav">
-              <a href="#">OUR STORY</a>
+              <a href="#about">OUR STORY</a>
             </li>
             <li className="ani-same-nav">
-              <a href="#">PHOTOS ALBUM</a>
+              <a href="#showcase">PHOTOS ALBUM</a>
             </li>
             <li className="ani-same-nav">
-              <a href="#">CONTACT</a>
+              <a href="#footer">CONTACT</a>
             </li>
             <li className="ani-same-nav">
-              <a href="#">SERVICES</a>
+              <a href="#service">SERVICES</a>
             </li>
           </ol>
         </div>
@@ -76,22 +76,22 @@ const Navbar = () => {
         <div className="main">
           <div className="back" onClick={toggleAnimation}></div>
           <div className="mob-links" onClick={toggleAnimation}>
-            <a href="#" className="mob-link">
+            <a href="#about" className="mob-link">
               OUR STORY
             </a>
           </div>
           <div className="mob-links" onClick={toggleAnimation}>
-            <a href="#" className="mob-link">
+            <a href="#showcase" className="mob-link">
               PHOTOS ALBUM
             </a>
           </div>
           <div className="mob-links" onClick={toggleAnimation}>
-            <a href="#" className="mob-link">
+            <a href="#footer" className="mob-link">
               CONTACT
             </a>
           </div>
           <div className="mob-links" onClick={toggleAnimation}>
-            <a href="#" className="mob-link">
+            <a href="#service" className="mob-link">
               SERVICES
             </a>
           </div>

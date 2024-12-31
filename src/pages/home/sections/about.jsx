@@ -11,7 +11,7 @@ const About = () => {
 
 
   return (
-    <section className="about" ref={aboutRef}>
+    <section className="about" ref={aboutRef} id="about">
       <div className="child textNbutton">
         <p className="head">
           <span>FEELS ARE</span>

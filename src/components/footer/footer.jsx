@@ -9,7 +9,7 @@ import { lines, upArrow , upArrow1} from '../../assets/index';
 import { BsStars } from "react-icons/bs";
 const Footer = () => {
   return (
-    <section className="footer">
+    <section className="footer" id='footer'>
         <div className="cursive-head">
             From ranchi
         </div>

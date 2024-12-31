@@ -17,7 +17,7 @@ const Service = () => {
         };
       }, []);
   return (
-    <section className="service">
+    <section className="service" id="service">
         
       <div className="head-1">
         <div className="big">Our studio</div>

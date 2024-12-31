@@ -7,7 +7,7 @@ import { BsStars } from "react-icons/bs";
 import {  show1, show2, show3, show5 } from "../../../assets";
 const Showcase = () => {
   return (
-    <section className="showcase-container">
+    <section className="showcase-container" id="showcase">
       <div className="showcase">
         <div className="child">
             <div className="sparkle">
