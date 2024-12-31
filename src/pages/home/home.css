@@ -98,7 +98,7 @@
   width: 100%;
   object-fit: cover;
   object-position: center;
-  
+
   transition: all 0.5s ease-in-out;
 }
 .hero .heroImage .child .image img:hover {
@@ -136,69 +136,61 @@
   font-weight: 600;
 }
 
-
-.fewDetails{
-    max-width: 1250px;
-    margin: auto;
-    display: flex;
-    margin-top: 10vh;
+.fewDetails {
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  margin-top: 10vh;
 }
-.fewDetails .child{
-    flex: 1;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.fewDetails .child {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.fewDetails .child h2{
-    font-size: 56px;
-    font-weight: 600;
-    font-family: var(--font2);
-
+.fewDetails .child h2 {
+  font-size: 56px;
+  font-weight: 600;
+  font-family: var(--font2);
 }
-.fewDetails .child .text{
+.fewDetails .child .text {
   font-size: 16px;
   font-weight: 500;
   font-family: var(--font7);
 }
 
-.fewDetails .numberOf{
+.fewDetails .numberOf {
   justify-content: flex-start;
 }
-.fewDetails .rank{
+.fewDetails .rank {
   justify-content: center;
 }
-.fewDetails .year{
+.fewDetails .year {
   justify-content: flex-end;
 }
 
-.two-marquee{
+.two-marquee {
   width: 100%;
-   padding: 100px 0;
+  padding: 100px 0;
   position: relative;
 }
-.marquee-one{
+.marquee-one {
   rotate: -2deg;
- 
 }
-.marquee-two{
-   rotate: 2deg;
-
-
- 
+.marquee-two {
+  rotate: 2deg;
 }
-.marquee-two .move{
-  background: #03382A;
+.marquee-two .move {
+  background: #03382a;
   color: white;
 }
-.move{
-  background: #D8FF04;
+.move {
+  background: #d8ff04;
   display: flex;
   padding: 10px 0;
   width: 105%;
-
-
 }
-.move .marquee{
+.move .marquee {
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -209,8 +201,7 @@
   transform: translateX(-100%);
 }
 
-
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .hero {
     padding: 0 10px;
     margin-top: 5vh;
@@ -218,153 +209,69 @@
   }
   .hero .heroText {
     width: 100%;
-    
     align-items: center;
-    
   }
-  
+
   .hero .heroText .text h1 {
     font-size: 62px;
-   
   }
-  .hero .heroText .text{
+  .hero .heroText .text {
     text-align: center;
   }
   .hero .heroText .button button {
-    
     font-size: 14px;
     padding: 8px;
-    
   }
-  
+
   .hero .heroImage {
     width: 100%;
-  margin-top: 35px;
-
+    margin-top: 35px;
   }
-  
 
-  
   .hero .heroImage .child .image {
     height: 280px;
     width: 95%;
- 
   }
-  
+
   .hero .heroImage .child::after {
-   
     rotate: -40deg;
     top: -4%;
     left: -2%;
     font-size: 18px;
-  
   }
 
- 
   .hero .heroImage .child .arcNtext {
-
     width: 100%;
-   
     gap: 10px;
   }
-  .hero .heroImage .child .arc {
-    margin-top: 10px;
-    height: 80px;
-    width: 2px;
-    background: rgb(209, 209, 209);
-    background: linear-gradient(
-      180deg,
-      rgba(209, 209, 209, 1) 0%,
-      rgba(255, 255, 255, 1) 100%
-    );
-  }
-  .hero .heroImage .child .text {
-    text-align: center;
-    font-family: var(--font2);
-  }
-  
+
   .hero .heroImage .child .text p {
     font-size: 14px;
-    font-weight: 500;
   }
   .hero .heroImage .child .text h2 {
     font-size: 16px;
-    font-weight: 600;
-  }
-  
-  
-  .fewDetails{
-      max-width: 1250px;
-      margin: auto;
-      display: flex;
-      margin-top: 10vh;
-      padding: 0 10px;
-  }
-  .fewDetails .child{
-      flex: 1;
-      display: flex;
-      align-items: center;
-      gap: 5px;
-  }
-  .fewDetails .child h2{
-      font-size: 24px;
-      font-weight: 600;
-      font-family: var(--font2);
-  
-  }
-  .fewDetails .child .text{
-    font-size: 12px;
-    font-weight: 500;
-    font-family: var(--font7);
-  }
-  
-  .fewDetails .numberOf{
-    justify-content: flex-start;
-  }
-  .fewDetails .rank{
-    justify-content: center;
-  }
-  .fewDetails .year{
-    justify-content: flex-end;
   }
 
-  .two-marquee{
-    width: 100%;
-     padding: 50px 0;
-    position: relative;
+  .fewDetails {
+    padding: 0 10px;
   }
-  .marquee-one{
-    rotate: -2deg;
-   
+  .fewDetails .child {
+    gap: 5px;
   }
-  .marquee-two{
-     rotate: 2deg;
-  
-  
-   
+  .fewDetails .child h2 {
+    font-size: 24px;
   }
-  .marquee-two .move{
-    background: #03382A;
-    color: white;
+  .fewDetails .child .text {
+    font-size: 12px;
   }
-  .move{
-    background: #D8FF04;
-    display: flex;
-    padding: 10px 0;
-    width: 105%;
-  
-  
+
+  .two-marquee {
+    padding: 50px 0;
   }
-  .move .marquee{
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
+
+  .move .marquee {
     gap: 20px;
     padding: 0 20px;
     font-size: 28px;
-    font-family: var(--font1);
-    transform: translateX(-100%);
   }
-  
-  
 }

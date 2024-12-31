@@ -14,7 +14,7 @@ const Showcase = () => {
                 <LuSparkles className="spark"/>
             </div>
           <div className="type-1-showcase">
-            <p className="text"><LuSparkles className="spark"/> ranjan studio</p>
+            <p className="text"><LuSparkles className="spark"/>@ranjan studio</p>
             <h2>prewedding shoot</h2>
 
             <div className="image-box-1">

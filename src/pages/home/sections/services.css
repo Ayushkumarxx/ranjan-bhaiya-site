@@ -150,21 +150,13 @@
 
 @media screen and (max-width: 768px) {
   .service {
-    max-width: 1150px;
-    margin: auto;
-    margin-top: 5vh;
     padding: 40px 10px;
   }
   .service .head-1,
   .service .head-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 10px;
-    position: relative;
   }
   .service .head-2 .abs-star {
-    position: absolute;
     font-size: 38px;
 
     bottom: -100%;
@@ -173,80 +165,49 @@
   .service .head-1 .big,
   .service .head-2 .big {
     font-size: 42px;
-  
   }
   .service .head-1 .small,
   .service .head-2 .small {
     font-size: 12px;
-   
   }
-  .service .head-2 {
-    margin-bottom: 50px;
-  }
+
   .service .our-service {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     height: 350px;
     width: 100%;
   }
   .service .our-service .image-box {
-    display: flex;
-    justify-content: space-between;
-    flex: none;
     width: 50%;
     height: 350px;
   }
   .service .our-service .image-box .image {
     width: 100%;
-    
     border-radius: 150px;
   }
   .service .our-service .image-box .image:nth-child(2) {
-      display: none;
+    display: none;
   }
-  
+
   .service .our-service .text {
     flex: none;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
     width: 50%;
   }
 
-  .service .our-service .text .li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-
-  }
   .service .our-service .text .li .arrow {
     font-size: 22px;
-    color: #727578;
   }
 
   .service .our-service .text .li p {
     font-size: 14px;
-    font-weight: 600;
-    font-family: var(--font4);
-    color: #727578;
   }
 
   .service .our-service .text .li:nth-child(3) .arrow {
-    color: #000;
     font-size: 28px;
   }
 
   .service .our-service .text .li:nth-child(3) p {
-    color: #000;
     font-size: 16px;
   }
-  .service .reverse-service {
-    flex-direction: row-reverse;
-    margin: 20px 0;
-  }
+
   .service .reverse-service .rev-text {
     align-items: flex-start;
     padding: 0 10px 0;
@@ -255,31 +216,14 @@
   }
   .service .reverse-service .rev-text p {
     font-size: 14px;
-    font-weight: 500;
-    font-family: var(--font4);
-    color: #727578;
   }
   .service .reverse-service .rev-text button {
-    background-color: transparent;
-    border: none;
-    margin-top: 20px;
     font-size: 14px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
   }
 
-
-  .service .our-service .image .overlay .overlay-content {
-    
-    padding: 0 0 5%;
-  }
   .service .our-service .image .overlay .overlay-content h3 {
     margin-bottom: 8px;
     font-size: 24px;
-    
     text-align: center;
   }
 }
